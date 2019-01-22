@@ -1,0 +1,15 @@
+[public]
+exten = 101,1,Answer()
+same = n,Wait(1)
+same = n,Playback(hello-world)
+same = n,Hangup()
+
+exten = 100,1,VoiceMail(200,u)
+
+exten = 200,1,Dial(SIP/6002,12,15)
+same = n,Hangup()
+
+exten = 300,1,Dial(SIP/6001,12,15)
+same = n,Hangup()
+
+include = dialout
