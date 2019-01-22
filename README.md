@@ -1,2 +1,2 @@
 # ECEN-5803
-Principle of Embedded Software
+Mastering Embedded Systems Architecture
